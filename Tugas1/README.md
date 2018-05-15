@@ -1,19 +1,15 @@
-<h1 align="center">
-  <br>
-  Tugas 1 Seleksi Warga Basdat 2018
-  <br>
-  <br>
-</h1>
+# Scraping Data Film dari Aktor-Aktor Terbaik
 
-<h2 align="center">
-  <br>
-  Data Scraping
-  <br>
-  <br>
-</h2>
+## Description
 
+Program akan melakukan scraping dari website:
+```
+- http://www.tasteofcinema.com/2017/the-25-best-actors-of-the-21st-century/
+- http://www.rottentomatoes.com/
+```
+dan menyimpannya dalam sebuah file .json
 
-### Specifications
+## Specifications
 
 1. Lakukan data scraping dari sebuah laman web untuk memeroleh data atau informasi tertentu __TANPA MENGGUNAKAN API__
 
@@ -81,3 +77,41 @@ Preprocessing contohnya :
   <br>
   <br>
 </p>
+
+## How To Use
+
+1. Jalankan Makefile 
+2. Tunggu sampai proses scraping selesai
+3. Hasil scraping akan disimpan di file dengan nama "data.json" pada folder data
+
+## JSON Structure
+
+JSON berupa list dari dictionary. Dictionary berisi list of actor yang berisi:
+```
+{
+  'actor': <nama aktor>,
+  'movies': <list of movies yang berisi:
+            {
+              'title': <judul film>,
+              'rating': <rating film>,
+              'year': <tahun rilis film>,
+              'genre': <list of genre film>,
+              'director': <sutradara dari film>,
+              'studio': <studio pembuatan film>
+            }
+            >
+}
+```
+
+## Screenshots
+![alt text](screenshots/actor_py.PNG)
+
+## Reference
+Library yang digunakan:
+1. bs4 (BeautifulSoup)
+2. requests
+3. time
+4. json
+
+## Author
+Nicholas Wijaya - 13516121

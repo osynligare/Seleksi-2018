@@ -105,6 +105,9 @@ JSON berupa list dari dictionary. Dictionary berisi list of actor yang berisi:
 
 ## Screenshots
 ![alt text](screenshots/actor_py.PNG)
+![alt text](screenshots/data_py1.PNG)
+![alt text](screenshots/data_py2.PNG)
+![alt text](screenshots/data_py3.PNG)
 
 ## Reference
 Library yang digunakan:
